@@ -32,7 +32,7 @@ class _LoginState extends State<Login> {
     return Scaffold(
       body:  Stack(
         children: <Widget>[
-          GradientBackground(),
+          GradientBackgroundOrange(),
           Center(
             child:Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -66,7 +66,7 @@ class _LoginState extends State<Login> {
                         _showError(context,state.message);
                       }
                       if(state is LoggedInBlocState){
-                        Navigator.pushNamed(context, '/consumer');
+                        Navigator.pushNamed(context, '/consumerHome');
                       }
                     },
                     child: BlocBuilder<LoginBloc,LoginState>(

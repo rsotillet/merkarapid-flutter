@@ -108,7 +108,9 @@ class _panelState extends State<Panel>{
                       side: BorderSide(color: Colors.transparent, width: 1.0),
                       borderRadius: new BorderRadius.circular(10.0),
                     ),
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.pushNamed(context, '/registerCommerce');
+                    },
                     disabledColor: Colors.grey,
                     color:  Color.fromRGBO(136,28,170, .7),
                     child: Text(

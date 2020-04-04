@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:merkarapid/logics/LoginLogic.dart';
+import 'package:merkarapid/ui/commerce.dart';
 import 'package:merkarapid/ui/consumer.dart';
 import 'package:merkarapid/ui/panel.dart';
 import 'package:merkarapid/ui/login.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/registerConsumer':(context)=>RegisterConsumer(),
         '/registerCommerce':(context)=>RegisterCommerce(),
         '/consumerHome':(context)=>Consumer(),
+        '/commerceHome':(context)=>Commerce(),
         '/login':(context)=>
             BlocProvider(
               builder: (_)=> LoginBloc(
