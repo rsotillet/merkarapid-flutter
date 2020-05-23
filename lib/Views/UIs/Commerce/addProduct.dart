@@ -5,10 +5,10 @@ import 'package:merkarapid/models/static.dart';
 
 class AddProduct extends StatefulWidget {
   @override
-  _addProductState createState() => _addProductState();
+  _AddProductState createState() => _AddProductState();
 }
 
-class _addProductState extends State<AddProduct> {
+class _AddProductState extends State<AddProduct> {
   TextEditingController categoryController,
       nameController,
       priceController,
@@ -17,7 +17,6 @@ class _addProductState extends State<AddProduct> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     categoryController = new TextEditingController();
     unitTypeController = new TextEditingController();
@@ -41,7 +40,6 @@ class _addProductState extends State<AddProduct> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,

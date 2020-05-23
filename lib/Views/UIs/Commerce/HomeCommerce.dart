@@ -20,14 +20,12 @@ class _HomeCommerceState extends State<HomeCommerce>{
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays ([SystemUiOverlay.bottom]);
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       drawer: DrawerCommerce(name: widget.user.name,lastName: widget.user.lastName,email: widget.user.email),
       body: _buildBody(),

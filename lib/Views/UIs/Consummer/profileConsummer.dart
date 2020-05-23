@@ -6,10 +6,10 @@ import 'package:merkarapid/Views/Partials/primariButton.dart';
 class ProfileConsummer extends StatefulWidget {
 
   @override
-  _profileConsummerState createState() => _profileConsummerState();
+  _ProfileConsummerState createState() => _ProfileConsummerState();
 }
 
-class _profileConsummerState extends State<ProfileConsummer> {
+class _ProfileConsummerState extends State<ProfileConsummer> {
 
   TextEditingController
   nameController,
@@ -21,7 +21,6 @@ class _profileConsummerState extends State<ProfileConsummer> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     nameController=new TextEditingController();
     lastNameController=new TextEditingController();
@@ -40,7 +39,6 @@ class _profileConsummerState extends State<ProfileConsummer> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         body:Stack(
           fit:StackFit.loose,

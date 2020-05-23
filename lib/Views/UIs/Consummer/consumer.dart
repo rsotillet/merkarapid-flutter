@@ -6,11 +6,11 @@ import 'package:merkarapid/utils/providers/push_notifications_provider.dart';
 class Consumer extends StatefulWidget{
 
   @override
-  _consumerState createState( )=> new _consumerState();
+  _ConsumerState createState( )=> new _ConsumerState();
 
 }
 
-class _consumerState extends State<Consumer>{
+class _ConsumerState extends State<Consumer>{
 
 
   String subtitle;
@@ -19,7 +19,6 @@ class _consumerState extends State<Consumer>{
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays ([SystemUiOverlay.bottom]);
     subtitle="Categorias";
@@ -39,7 +38,6 @@ class _consumerState extends State<Consumer>{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return WillPopScope(
       onWillPop: ()async{
         if(subtitle!=''){

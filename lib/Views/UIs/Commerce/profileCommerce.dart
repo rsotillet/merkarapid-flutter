@@ -23,7 +23,6 @@ class _ProfileCommerceState extends State<ProfileCommerce> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     nameController=new TextEditingController();
     lastNameController=new TextEditingController();
@@ -46,7 +45,6 @@ class _ProfileCommerceState extends State<ProfileCommerce> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         body:Stack(
           fit:StackFit.loose,

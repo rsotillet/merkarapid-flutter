@@ -7,7 +7,6 @@ class LoginException implements Exception{}
 class SimpleRegisterCommerceLogic extends RegisterCommerceLogic{
   @override
   Future register(String email, String password) {
-    // TODO: implement register
     return null;
   }
 

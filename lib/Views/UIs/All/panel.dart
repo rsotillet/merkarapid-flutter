@@ -22,11 +22,11 @@ import 'login.dart';
 class Panel extends StatefulWidget{
 
   @override
-  _panelState createState() =>_panelState();
+  _PanelState createState() =>_PanelState();
 
 }
 
-class _panelState extends State<Panel>{
+class _PanelState extends State<Panel>{
 
   double splashOpacity;
   bool showSlash;
@@ -35,7 +35,6 @@ class _panelState extends State<Panel>{
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays ([SystemUiOverlay.bottom]);
     splashOpacity=1.0;
@@ -181,7 +180,6 @@ class _panelState extends State<Panel>{
             )
         ),
       );
-    // TODO: implement build
   }
 
 
@@ -191,21 +189,21 @@ class _panelState extends State<Panel>{
         builder: (_)=> LoginBloc(
             logic: ExampleLoginLogic()
         ),
-        child: Login(),
+        child: Login(), create: (BuildContext context) {},
       );
     }else if(typeAction==PanelTypeAction.REGISTER_CONSUMER) {
       return BlocProvider(
         builder: (_)=>RegisterConsumerBloc(
           logic: SimpleRegisterConsumerLogic()
         ),
-        child: RegisterConsumer()
+        child: RegisterConsumer(), create: (BuildContext context) {},
       );
     }else if(typeAction==PanelTypeAction.REGISTER_COMMERCE) {
       return BlocProvider(
         builder: (_)=>RegisterCommerceBloc(
             logic: SimpleRegisterCommerceLogic()
         ),
-        child: RegisterCommerce(),
+        child: RegisterCommerce(), create: (BuildContext context) {},
       );
     }else{
       return Container();

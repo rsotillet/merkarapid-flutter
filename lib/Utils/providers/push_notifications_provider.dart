@@ -61,7 +61,7 @@ class PushNotificationProvider {
     }catch(e){}
   }
 
-  Future _sendResponseNotification(token)async {
+  Future sendResponseNotification(token)async {
     try{
       SharedPreferences prefs = await SharedPreferences.getInstance();
       print("===================Enviando Respuesta======================");
@@ -71,7 +71,6 @@ class PushNotificationProvider {
       var jsonRes = json.decode(response.body);
       print(jsonRes);
       if(jsonRes["return"] && jsonRes["code"]==100){
-
       }
     }catch(e){
 

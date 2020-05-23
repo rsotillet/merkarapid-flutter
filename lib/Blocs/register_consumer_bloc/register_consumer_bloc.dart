@@ -16,6 +16,5 @@ class RegisterConsumerBloc extends Bloc<RegisterConsumerEvent, RegisterConsumerS
   Stream<RegisterConsumerState> mapEventToState(
     RegisterConsumerEvent event,
   ) async* {
-    // TODO: Add Logic
   }
 }

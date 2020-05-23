@@ -10,11 +10,11 @@ import 'package:merkarapid/models/static.dart';
 
 class OrderDetail extends StatefulWidget{
   @override
-  _orderDetailState createState() =>_orderDetailState();
+  _OrderDetailState createState() =>_OrderDetailState();
 
 }
 
-class _orderDetailState extends State<OrderDetail>{
+class _OrderDetailState extends State<OrderDetail>{
   @override
   Widget build(BuildContext context) {
     int price=0;
@@ -31,9 +31,6 @@ class _orderDetailState extends State<OrderDetail>{
     }
     //print('precio: '+price.toString());
 
-
-
-    // TODO: implement build
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled ){

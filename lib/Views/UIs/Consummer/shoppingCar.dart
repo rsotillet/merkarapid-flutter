@@ -7,17 +7,16 @@ import 'package:merkarapid/models/static.dart';
 class ShoppingCar extends StatefulWidget{
 
   @override
-  _shoppingCarState createState( )=> new _shoppingCarState();
+  _ShoppingCarState createState( )=> new _ShoppingCarState();
 
 }
 
-class _shoppingCarState extends State<ShoppingCar>{
+class _ShoppingCarState extends State<ShoppingCar>{
 
 
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays ([SystemUiOverlay.bottom]);
   }
@@ -25,7 +24,6 @@ class _shoppingCarState extends State<ShoppingCar>{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       body: _buildBody(),
     );

@@ -3,14 +3,13 @@ import 'package:merkarapid/models/static.dart';
 
 class CommerceList extends StatefulWidget{
   @override
-  _commerceListState createState()=>_commerceListState();
+  _CommerceListState createState()=>_CommerceListState();
 
 }
 
-class _commerceListState extends State<CommerceList>{
+class _CommerceListState extends State<CommerceList>{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,

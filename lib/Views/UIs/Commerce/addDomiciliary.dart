@@ -5,10 +5,10 @@ import 'package:merkarapid/models/static.dart';
 
 class AddDomiciliary extends StatefulWidget {
   @override
-  _addDomiciliaryState createState() => _addDomiciliaryState();
+  _AddDomiciliaryState createState() => _AddDomiciliaryState();
 }
 
-class _addDomiciliaryState extends State<AddDomiciliary> {
+class _AddDomiciliaryState extends State<AddDomiciliary> {
   TextEditingController documentTypeController,
       lastNameController,
       documentController,
@@ -18,7 +18,6 @@ class _addDomiciliaryState extends State<AddDomiciliary> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     documentTypeController = new TextEditingController();
     lastNameController = new TextEditingController();
@@ -44,7 +43,6 @@ class _addDomiciliaryState extends State<AddDomiciliary> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,

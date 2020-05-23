@@ -6,11 +6,11 @@ import 'package:url_launcher/url_launcher.dart' ;
 
 class OrderDetailConsummer extends StatefulWidget{
   @override
-  _orderDetailConsummerState createState() =>_orderDetailConsummerState();
+  _OrderDetailConsummerState createState() =>_OrderDetailConsummerState();
 
 }
 
-class _orderDetailConsummerState extends State<OrderDetailConsummer>{
+class _OrderDetailConsummerState extends State<OrderDetailConsummer>{
   @override
   Widget build(BuildContext context) {
     int price=0;
@@ -26,10 +26,6 @@ class _orderDetailConsummerState extends State<OrderDetailConsummer>{
       //print(aux2.elementAt(1)+" ");
     }
     //print('precio: '+price.toString());
-
-
-
-    // TODO: implement build
     return Scaffold(
         body: NestedScrollView(
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled ){

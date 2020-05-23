@@ -8,9 +8,7 @@ class ContactState extends State<Contact> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-
-    return Scaffold(
+      return Scaffold(
         appBar: AppBar(
           title: const Text('Contáctanos'),
           flexibleSpace: Container(

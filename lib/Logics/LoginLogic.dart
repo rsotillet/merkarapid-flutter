@@ -29,7 +29,6 @@ class SimpleLoginLogic extends LoginLogic{
 
   @override
   Future<String> logout() async {
-    // TODO: implement logout
     return "";
   }
 
@@ -62,14 +61,13 @@ class ExampleLoginLogic extends LoginLogic{
 
   @override
   Future<String> logout() async {
-    // TODO: implement logout
     return "";
   }
 
 }
 
 class Response{
-  final String Token;
+  final String token;
   final User user;
-  Response(this.Token, this.user);
+  Response(this.token, this.user);
 }

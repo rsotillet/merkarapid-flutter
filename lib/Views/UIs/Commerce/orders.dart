@@ -4,14 +4,13 @@ import 'package:merkarapid/models/static.dart';
 
 class Orders extends StatefulWidget{
   @override
-  _ordersState createState()=>_ordersState();
+  _OrdersState createState()=>_OrdersState();
 
 }
 
-class _ordersState extends State<Orders>{
+class _OrdersState extends State<Orders>{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return DefaultTabController(
       length: 4,
       child: Scaffold(

@@ -13,19 +13,16 @@ class InitialLoginState extends LoginState {
 
 class LogginInBlockState extends LoginState{
   @override
-  // TODO: implement props
   List<Object> get props => null;
 }
 
 class LoggedInBlocState extends LoginState{
   final String token;
+  final User user;
 
-  final User;
-
-  LoggedInBlocState(this.token, this.User);
+  LoggedInBlocState(this.token, this.user);
 
   @override
-  // TODO: implement props
   List<Object> get props => [token];
 
 }
@@ -36,7 +33,7 @@ class CorrectEmailState extends LoginState{
   CorrectEmailState(this.email);
 
   @override
-  // TODO: implement props
+  
   List<Object> get props => [email];
 
 }
@@ -47,7 +44,7 @@ class IncorrectEmailState extends LoginState{
   IncorrectEmailState(this.message);
 
   @override
-  // TODO: implement props
+  
   List<Object> get props => [message];
 
 }
@@ -59,7 +56,7 @@ class ErrorBlocState extends LoginState{
   ErrorBlocState(this.message);
 
   @override
-  // TODO: implement props
+  
   List<Object> get props => [message];
 
 }

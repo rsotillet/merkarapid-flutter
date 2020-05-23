@@ -6,11 +6,11 @@ import 'package:merkarapid/Views/Partials/ShowOptions.dart';
 
 class RegisterCommerce extends StatefulWidget{
   @override
-  _registerCommerceState createState() => _registerCommerceState();
+  _RegisterCommerceState createState() => _RegisterCommerceState();
 
 }
 
-class _registerCommerceState extends State<RegisterCommerce>{
+class _RegisterCommerceState extends State<RegisterCommerce>{
 
   TextEditingController documentTypeController;
   TextEditingController placeController;
@@ -20,7 +20,6 @@ class _registerCommerceState extends State<RegisterCommerce>{
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     documentTypeController=new TextEditingController();
     placeController=new TextEditingController();
@@ -30,7 +29,6 @@ class _registerCommerceState extends State<RegisterCommerce>{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       body:Stack(
         fit:StackFit.loose,

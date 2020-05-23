@@ -7,15 +7,14 @@ class Product extends StatefulWidget{
   const Product({Key key, @required this.rol}) : super(key: key);
 
   @override
-  _productState createState()=>_productState();
+  _ProductState createState()=>_ProductState();
 
 
 }
 
-class _productState extends State<Product>{
+class _ProductState extends State<Product>{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,

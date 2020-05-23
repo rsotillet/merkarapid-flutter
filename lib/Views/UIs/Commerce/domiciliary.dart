@@ -3,14 +3,13 @@ import 'package:merkarapid/models/static.dart';
 
 class Domiciliary extends StatefulWidget{
   @override
-  _domiciliaryState createState()=>_domiciliaryState();
+  _DomiciliaryState createState()=>_DomiciliaryState();
 
 }
 
-class _domiciliaryState extends State<Domiciliary>{
+class _DomiciliaryState extends State<Domiciliary>{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,

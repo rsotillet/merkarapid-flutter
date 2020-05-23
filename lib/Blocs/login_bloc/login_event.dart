@@ -21,7 +21,6 @@ class DoWriteEvent extends LoginEvent{
   DoWriteEvent(this.email);
 
   @override
-  // TODO: implement props
   List<Object> get props => [email];
 
 }

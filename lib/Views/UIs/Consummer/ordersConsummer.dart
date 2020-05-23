@@ -3,14 +3,13 @@ import 'package:merkarapid/Views/Partials/ItemOrder.dart';
 import 'package:merkarapid/models/static.dart';
 class OrdersConsummer extends StatefulWidget{
   @override
-  _ordersConsummerState createState()=>_ordersConsummerState();
+  _OrdersConsummerState createState()=>_OrdersConsummerState();
 
 }
 
-class _ordersConsummerState extends State<OrdersConsummer>{
+class _OrdersConsummerState extends State<OrdersConsummer>{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return DefaultTabController(
       length: 2,
       child: Scaffold(

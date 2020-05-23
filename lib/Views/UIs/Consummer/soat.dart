@@ -6,15 +6,12 @@ import 'package:merkarapid/Views/Partials/primariButton.dart';
 
 class Soat extends StatefulWidget{
   @override
-  _soatState createState() =>_soatState();
-
-
+  _SoatState createState() =>_SoatState();
 }
 
-class _soatState extends State<Soat>{
+class _SoatState extends State<Soat>{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       body: Stack(
         children: <Widget>[

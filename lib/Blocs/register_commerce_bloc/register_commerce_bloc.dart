@@ -15,6 +15,6 @@ class RegisterCommerceBloc extends Bloc<RegisterCommerceEvent, RegisterCommerceS
   Stream<RegisterCommerceState> mapEventToState(
     RegisterCommerceEvent event,
   ) async* {
-    // TODO: Add Logic
+    
   }
 }

@@ -5,10 +5,10 @@ import 'package:merkarapid/Views/Partials/GradientBackground.dart';
 class RegisterConsumer extends StatefulWidget {
 
   @override
-  _registerConsumerState createState() => _registerConsumerState();
+  _RegisterConsumerState createState() => _RegisterConsumerState();
 }
 
-class _registerConsumerState extends State<RegisterConsumer> {
+class _RegisterConsumerState extends State<RegisterConsumer> {
 
   TextEditingController
       nameController,
@@ -23,7 +23,6 @@ class _registerConsumerState extends State<RegisterConsumer> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     nameController=new TextEditingController();
     lastNameController=new TextEditingController();
@@ -38,7 +37,6 @@ class _registerConsumerState extends State<RegisterConsumer> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         body:Stack(
           fit:StackFit.loose,

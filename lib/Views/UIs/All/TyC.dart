@@ -3,13 +3,12 @@ import 'package:merkarapid/Views/Partials/primariButton.dart';
 
 class TyC extends StatefulWidget{
   @override
-  _tycState createState()=>_tycState();
+  _TycState createState()=>_TycState();
 }
 
-class _tycState extends State<TyC> {
+class _TycState extends State<TyC> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -48,7 +47,6 @@ class _tycState extends State<TyC> {
             ),
           ],
         ),
-
     );
   }
 }

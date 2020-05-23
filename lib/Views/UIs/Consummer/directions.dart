@@ -3,15 +3,14 @@ import 'package:flutter/material.dart';
 class Directions extends StatefulWidget{
 
   @override
-  _directionsState createState()=>_directionsState();
+  _DirectionsState createState()=>_DirectionsState();
 
 
 }
 
-class _directionsState extends State<Directions>{
+class _DirectionsState extends State<Directions>{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
