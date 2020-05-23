@@ -31,7 +31,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     yield LogginInBlockState();
     try{
       Response result = await logic.login(event.email, event.password);
-      yield LoggedInBlocState(result.Token,result.user);
+      yield LoggedInBlocState(result.token,result.user);
     }on LoginException{
       yield ErrorBlocState('No se pudo logear');
     }

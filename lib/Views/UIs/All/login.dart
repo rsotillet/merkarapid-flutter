@@ -64,15 +64,15 @@ class _LoginState extends State<Login> {
                         _showError(context,state.message);
                       }
                       if(state is LoggedInBlocState){
-                        if(state.User.role=="COMMERCE"){
+                        if(state.user.role=="COMMERCE"){
                           //Navigator.pop(context);
-                          Navigator.pushReplacementNamed(context, '/commerceHome', arguments: state.User);
+                          Navigator.pushReplacementNamed(context, '/commerceHome', arguments: state.user);
                         }
                       }
                       if(state is LoggedInBlocState){
-                        if(state.User.role=="CONSUMMER"){
+                        if(state.user.role=="CONSUMMER"){
                           //Navigator.pop(context);
-                          Navigator.pushReplacementNamed(context, '/consumerHome', arguments: state.User);
+                          Navigator.pushReplacementNamed(context, '/consumerHome', arguments: state.user);
                         }
                       }
                     },
